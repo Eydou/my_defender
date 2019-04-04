@@ -1,6 +1,6 @@
 # My_defender_2018 Epitech
 My defender Epitech 2018 
-Projet tower defense en CSFML:
+Projet à 2 avec https://github.com/alexis-lopes avec tower defense en CSFML:
 l'objectif est de défendre une zone contre des vagues ennemies avec des tourelles
 
 Note : 85 / 100
