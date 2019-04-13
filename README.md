@@ -1,8 +1,6 @@
 # My_defender_2018 Epitech
 My defender Epitech 2018 
-Projet à 2 avec <a href="https://github.com/LopesAlexis">Alexis Lopes</a> ce projet est un tower defense en CSFML:
-l'objectif est de défendre une zone contre des vagues ennemies avec des tourelles
-
+Project with <a href="https://github.com/LopesAlexis">Alexis Lopes</a> this project is a tower defense in CSFML: the objective is to defend an area against enemy waves with towers
 HOWTOPLAY : 
 
 you have 3 life
