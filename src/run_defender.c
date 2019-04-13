@@ -17,7 +17,7 @@ int drw_intro(all_t *all, sfRenderWindow *window)
         sfRenderWindow_drawSprite(window, all->game->sprite[12], NULL);
         sfRenderWindow_drawSprite(window, all->game->sprite[13], NULL);
         sfRenderWindow_display(window);
-        if (all->game->seconds[2] > 4) {
+        if (all->game->seconds[2] > 3) {
             i = 1;
         }
     }

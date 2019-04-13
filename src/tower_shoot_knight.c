@@ -20,6 +20,7 @@ void canon_tower_shoot_knight(all_t *all, sfRenderWindow *window)
             pos.y < all->twr->v_canon_tower[i].y + 200) {
             if (all->enm->seconds[16] > 2) {
                 all->enm->life[3] = all->enm->life[3] - 1;
+                sfMusic_play(all->msc->game[4]);
                 sfClock_restart(all->enm->clock[16]);
             }
         }
@@ -39,6 +40,7 @@ void fire_tower_shoot_knight(all_t *all, sfRenderWindow *window)
             pos.y < all->twr->v_fire_tower[i].y + 200) {
             if (all->enm->seconds[16] > 2) {
                 all->enm->life[3] = all->enm->life[3] - 2;
+                sfMusic_play(all->msc->game[5]);
                 sfClock_restart(all->enm->clock[16]);
             }
         }
@@ -58,6 +60,7 @@ void ice_tower_shoot_knight(all_t *all, sfRenderWindow *window)
             pos.y < all->twr->v_ice_tower[i].y + 200) {
             if (all->enm->seconds[16] > 2) {
                 all->enm->life[3] = all->enm->life[3] - 3;
+                sfMusic_play(all->msc->game[6]);
                 sfClock_restart(all->enm->clock[16]);
             }
         }
@@ -77,6 +80,7 @@ void thunder_tower_shoot_knight(all_t *all, sfRenderWindow *window)
             pos.y < all->twr->v_thunder_tower[i].y + 200) {
             if (all->enm->seconds[16] > 2) {
                 all->enm->life[3] = all->enm->life[3] - 4;
+                sfMusic_play(all->msc->game[7]);
                 sfClock_restart(all->enm->clock[16]);
             }
         }
