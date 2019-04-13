@@ -59,7 +59,7 @@ void ice_tower_shoot_assassin(all_t *all, sfRenderWindow *window)
             pos.y > all->twr->v_ice_tower[i].y - 150 &&
             pos.y < all->twr->v_ice_tower[i].y + 200) {
             if (all->enm->seconds[16] > 2) {
-                all->enm->life[1] = all->enm->life[1] - 3;
+                all->enm->life[1] = all->enm->life[1] - 4;
                 sfMusic_play(all->msc->game[6]);
                 sfClock_restart(all->enm->clock[16]);
             }

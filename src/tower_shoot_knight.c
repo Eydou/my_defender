@@ -79,7 +79,7 @@ void thunder_tower_shoot_knight(all_t *all, sfRenderWindow *window)
             pos.y > all->twr->v_thunder_tower[i].y - 150 &&
             pos.y < all->twr->v_thunder_tower[i].y + 200) {
             if (all->enm->seconds[16] > 2) {
-                all->enm->life[3] = all->enm->life[3] - 4;
+                all->enm->life[3] = all->enm->life[3] - 6;
                 sfMusic_play(all->msc->game[7]);
                 sfClock_restart(all->enm->clock[16]);
             }

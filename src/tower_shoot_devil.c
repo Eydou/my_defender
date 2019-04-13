@@ -39,7 +39,7 @@ void fire_tower_shoot_devil(all_t *all, sfRenderWindow *window)
             pos.y > all->twr->v_fire_tower[i].y - 150 &&
             pos.y < all->twr->v_fire_tower[i].y + 200) {
             if (all->enm->seconds[16] > 2) {
-                all->enm->life[2] = all->enm->life[2] - 2;
+                all->enm->life[2] = all->enm->life[2] - 3;
                 sfMusic_play(all->msc->game[5]);
                 sfClock_restart(all->enm->clock[16]);
             }

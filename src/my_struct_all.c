@@ -30,6 +30,7 @@ void my_struct_game(all_t *all, sfRenderWindow *window)
         sfSprite_setTexture(all->game->sprite[j], all->game->txture[j], sfTrue);
     rect_over(all, 0, 1080, 1085);
     vector_game(all);
+    all->game->coin = 99;
 }
 
 void my_struct_game2(all_t *all, sfRenderWindow *window)
