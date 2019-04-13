@@ -9,6 +9,7 @@ you have 3 life
 objective finish the lvl 2
 
 DAMAGE TOWER :
+
 canon tower : -1 all enemies
 
 fire tower : -2 all except -3 for devil
@@ -19,13 +20,11 @@ thunder tower : -4 all except -6 for knight(boss)
 
 COIN:
 
-assasin : 3
+assasin : 4
 
-devil : 5
+devil : 6
 
-knight : 7
-
-WAVE :
+knight : 8
 
 all 5 waves there is knight boss who make you win 15 coin
 
