@@ -10,18 +10,19 @@
 
 void my_setup_handler2(all_t *all, sfRenderWindow *window, int w)
 {
+    static int boss = 0;
     if (all->enm->nb_enm == 0) {
         all->game->wave = all->game->wave + 1;
-        if (all->game->wave == 5 && all->game->lvl == 1)
-            all->enm->life[3] = 45;
-        if (all->game->wave == 10 && all->game->lvl == 1)
-            all->enm->life[3] = 100;
-        if (all->game->wave == 5 && all->game->lvl == 2)
-            all->enm->life[3] = 150;
-        if (all->game->wave == 10 && all->game->lvl == 2)
-            all->enm->life[3] = 260;
+        if (all->game->wave == 5) {
+            all->enm->life[3] = all->enm->life[3] + boss;
+            boss = boss + 50;
+        }
+        if (all->game->wave == 10) {
+            all->enm->life[3] = all->enm->life[3] + boss;
+            boss = boss + 80;
+        }
         if (all->game->wave == 11) {
-            all->game->lvl = 2;
+            all->game->lvl = all->game->lvl++;
             all->game->wave = 1;
         }
         all->enm->a[1] = 0;

@@ -7,6 +7,7 @@
 
 #include "include/my_src.h"
 #include "include/my_struct.h"
+#include <string.h>
 
 int main(int ac, char **av, char **env)
 {
@@ -23,7 +24,7 @@ int main(int ac, char **av, char **env)
     window = sfRenderWindow_create(mode, "Fantasy TD",
     sfResize | sfClose,
     NULL);
-    if (ac == 1) {
+    if (ac == 1 || all->cstl->life == 3) {
         drw_intro(all, window);
         my_start_game(all, window);
         for (int i = 0; i <= 13; i++)
